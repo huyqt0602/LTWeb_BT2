@@ -1,0 +1,25 @@
+* { box-sizing: border-box; }
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    max-width: 620px;
+    color: #222;
+}
+.logo { display: block; width: 150px; height: auto; margin-bottom: 1rem; }
+h1 { color: teal; font-size: 1.8rem; margin-bottom: .3rem; }
+h2, legend { color: teal; font-size: 1.15rem; font-weight: bold; }
+form { margin-top: 1.5rem; }
+.form-row { display: grid; grid-template-columns: 190px 1fr; gap: .6rem; align-items: center; margin: .65rem 0; }
+.form-row > label { font-weight: bold; }
+input[type="text"], input[type="email"], input[type="date"], select {
+    width: 100%; max-width: 280px; padding: .45rem; border: 1px solid #999; border-radius: 4px;
+}
+fieldset { border: 1px solid #bbb; border-radius: 5px; margin: 1.2rem 0; padding: .8rem 1rem; }
+.choice { display: block; margin: .4rem 0; }
+button { margin-top: .7rem; padding: .55rem 1.2rem; cursor: pointer; }
+@media (max-width: 520px) {
+    .form-row { grid-template-columns: 1fr; gap: .2rem; }
+}

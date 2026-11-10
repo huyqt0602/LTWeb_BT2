@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="ch04_ex1_survey:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/ch04_ex1_survey_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="ch04_ex1_survey" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="ch04_ex1_survey/web/Web" />
+    </root>
+  </artifact>
+</component>

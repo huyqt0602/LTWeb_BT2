@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Murach's Java Servlets and JSP - Survey</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body class="survey-page">
+    <header>
+        <img src="images/Murachlogo.png" alt="Murach Logo" class="logo">
+        <h1>Survey</h1>
+        <p>If you have a moment, we'd appreciate it if you would fill out this survey.</p>
+    </header>
+
+    <main>
+        <form action="emailList" method="post">
+            <input type="hidden" name="action" value="add">
+
+            <h2>Your Information</h2>
+            <div class="form-row">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-row">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+            <div class="form-row">
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+            <div class="form-row">
+                <label for="birthDate">Date of Birth (optional):</label>
+                <input type="date" id="birthDate" name="birthDate">
+            </div>
+
+            <fieldset>
+                <legend>How did you hear about us?</legend>
+                <label class="choice"><input type="radio" name="hearAboutUs" value="searchEngine" checked> Search Engine</label>
+                <label class="choice"><input type="radio" name="hearAboutUs" value="wordOfMouth"> Word of mouth</label>
+                <label class="choice"><input type="radio" name="hearAboutUs" value="socialMedia"> Social Media</label>
+                <label class="choice"><input type="radio" name="hearAboutUs" value="other"> Other</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Would you like to receive announcements about new CDs and special offers?</legend>
+                <label class="choice"><input type="checkbox" name="announcements" value="specialOffers"> YES, I'd like that.</label>
+                <label class="choice"><input type="checkbox" name="announcements" value="emailOK"> YES, please send me email announcements.</label>
+            </fieldset>
+
+            <div class="form-row">
+                <label for="contactMethod">Please contact me by:</label>
+                <select id="contactMethod" name="contactMethod">
+                    <option value="emailOrPostalMail">Email or Postal Mail</option>
+                    <option value="emailOnly">Email Only</option>
+                    <option value="postalMailOnly">Postal Mail Only</option>
+                </select>
+            </div>
+
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </main>
+</body>
+</html>
